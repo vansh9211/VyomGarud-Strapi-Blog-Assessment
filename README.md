@@ -12,7 +12,8 @@ It utilizes a Headless CMS (Strapi) for content management and a modern framewor
 * Public-facing blog display.
 
 ## 🏛️ Initial Architecture Diagram
-*(Leave this section blank for now. See Part C below for what to add)*
+![Simple Architecture Diagram for Strapi/React Blog]
+(./architecture.png)
 
 ## 🔧 Running Instructions (TBD)
 *(Leave this section blank for now. You will fill this out in Step 7)*
