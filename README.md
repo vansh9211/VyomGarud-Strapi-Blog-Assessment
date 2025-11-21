@@ -20,3 +20,8 @@ It utilizes a Headless CMS (Strapi) for content management and a modern framewor
 
 ## 🛠️ Tech Stack (TBD)
 Strapi, Node.js, SQLite, React, Vite, Axios, React Router
+
+## 🏛️ Final Architecture Diagram
+(The image must be placed in the same folder as this README)
+![Final Architectural Diagram of Strapi/React Blog]
+(./architecture_diagram.png)
