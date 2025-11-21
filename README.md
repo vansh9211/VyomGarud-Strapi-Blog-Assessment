@@ -15,8 +15,57 @@ It utilizes a Headless CMS (Strapi) for content management and a modern framewor
 ![Simple Architecture Diagram for Strapi/React Blog]
 (./architecture.png)
 
-## 🔧 Running Instructions (TBD)
-*(Leave this section blank for now. You will fill this out in Step 7)*
+## 🔧 Running Instructions
+
+This project requires two separate terminal windows (PowerShell/Git Bash) to run the backend API and the frontend client simultaneously.
+
+### Prerequisites
+* Node.js (LTS version) and npm installed.
+* Git installed (for cloning).
+
+### Step 1: Clone and Install Dependencies
+1.  Clone this repository to your local machine:
+    ```bash
+    git clone [YOUR_GITHUB_REPO_URL]
+    cd VyomGarud_Strapi_Blog
+    ```
+2.  Install Backend Dependencies (API and CMS):
+    ```bash
+    cd backend
+    npm install
+    ```
+3.  Install Frontend Dependencies (React Client):
+    ```bash
+    cd ..
+    cd frontend
+    npm install
+    ```
+
+### Step 2: Start the Servers
+
+**Terminal Window 1 (Backend - Strapi)**
+1.  Navigate to the backend folder:
+    ```bash
+    cd C:\...\backend
+    ```
+2.  Start the API and CMS (runs on **http://localhost:1337**):
+    ```bash
+    npm run develop
+    ```
+
+**Terminal Window 2 (Frontend - React/Vite)**
+1.  Navigate to the frontend folder:
+    ```bash
+    cd C:\...\frontend
+    ```
+2.  Start the client application (runs on **http://localhost:5173**):
+    ```bash
+    npm run dev
+    ```
+
+### Access Points
+* **Live Blog:** http://localhost:5173/
+* **Admin CMS:** http://localhost:1337/admin (Use the credentials you created.)
 
 ## 🛠️ Tech Stack (TBD)
 Strapi, Node.js, SQLite, React, Vite, Axios, React Router
