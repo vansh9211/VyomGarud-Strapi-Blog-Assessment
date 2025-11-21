@@ -18,7 +18,7 @@ function PostDetail() {
           }
   
           const data = await response.json();
-          setPost(data.data); // Strapi v5 returns data directly
+          setPost(data.data);
           setLoading(false);
         } catch (e) {
           console.error("Error fetching posts:", e);
@@ -32,12 +32,10 @@ function PostDetail() {
   
   if (loading) return <h1>Loading Post...</h1>;
   if (error) return <h1 style={{ color: 'red' }}>Error: {error}</h1>;
-  if (!post) return <h1>Post not found.</h1>; // Should only happen if API returns 200 with null data
-
+  if (!post) return <h1>Post not found.</h1>; 
   const myPost = post.filter(p => p.id.toString() === id)[0];
   if (!myPost) return <h1>Post with ID {id} not found.</h1>;
   
-  // Use optional chaining for safer image URL construction (using confirmed 'media' field)
   const imageUrl = myPost.media?.url
     ? `http://localhost:1337${myPost.media.url}`
     : null;

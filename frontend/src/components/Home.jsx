@@ -18,7 +18,7 @@ function Home() {
         }
 
         const data = await response.json();
-        setPosts(data.data); // Strapi v5 returns data directly
+        setPosts(data.data);
         setLoading(false);
       } catch (e) {
         console.error("Error fetching posts:", e);
@@ -33,9 +33,7 @@ function Home() {
   if (loading) return <h1 style={{ textAlign: 'center' }}>Loading Blog Posts...</h1>;
   if (error) return <h1 style={{ textAlign: 'center', color: 'red' }}>Error: {error}</h1>;
 
-  // Strapi v5 → NO attributes object
   const validPosts = posts.filter(post => post && post.title);
-  
 
   if (validPosts.length === 0) {
     return <h1 style={{ textAlign: 'center' }}>No published posts found.</h1>;
@@ -56,7 +54,6 @@ function Home() {
 
         return (
           <div key={post.id} className="post-card">
-            <h2>My id {post.id} & title : {title}</h2>
             <h2>
               <Link to={`/post/${post.id}`}>
                 {title}

@@ -1,57 +1,39 @@
- /* GLOBAL RESET AND BASE STYLES */
 :root {
-  /* Use a readable font stack */
+  --primary-color: #007bff;
+  --secondary-color: #2c3e50;
+  --light-bg: #ffffff;
+  
+  --shadow-base: 0 1px 3px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); 
+  --shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.25); /* Stronger lift on hover */
+  
   font-family: Arial, sans-serif; 
   line-height: 1.6;
   font-weight: 400;
 
-  /* Use a clean background */
   color: #333;
   background-color: #f8f8f8;
   
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-/* Link Styles */
-a {
-  font-weight: 500;
-  color: #007bff; /* Professional blue */
-  text-decoration: none;
-  transition: color 0.25s;
-}
-
-a:hover {
-  color: #0056b3;
-}
-
-/* Button Styles */
 button {
   border-radius: 4px;
-  border: 1px solid #007bff;
-  padding: 0.6em 1.2em;
+  border: none; 
+  padding: 0.7em 1.4em;
   font-size: 1em;
-  font-weight: 500;
-  background-color: #007bff;
+  font-weight: 600;
+  background-color: var(--primary-color);
   color: white;
   cursor: pointer;
-  transition: background-color 0.25s;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); 
 }
 
 button:hover {
   background-color: #0056b3;
+  transform: translateY(-1px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
 }
 
-h1, h2, h3 {
-  margin-top: 0;
-  color: #2c3e50;
+button:active {
+    transform: translateY(1px); 
 }
-/* Removed extra closing brace } */
