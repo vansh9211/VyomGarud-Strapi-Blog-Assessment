@@ -1,0 +1,57 @@
+ /* GLOBAL RESET AND BASE STYLES */
+:root {
+  /* Use a readable font stack */
+  font-family: Arial, sans-serif; 
+  line-height: 1.6;
+  font-weight: 400;
+
+  /* Use a clean background */
+  color: #333;
+  background-color: #f8f8f8;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Link Styles */
+a {
+  font-weight: 500;
+  color: #007bff; /* Professional blue */
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Button Styles */
+button {
+  border-radius: 4px;
+  border: 1px solid #007bff;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+/* Removed extra closing brace } */
