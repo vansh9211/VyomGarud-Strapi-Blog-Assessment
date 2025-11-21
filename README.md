@@ -19,4 +19,4 @@ It utilizes a Headless CMS (Strapi) for content management and a modern framewor
 *(Leave this section blank for now. You will fill this out in Step 7)*
 
 ## 🛠️ Tech Stack (TBD)
-*(Leave this section blank for now. You will fill this out later)*
+Strapi, Node.js, SQLite, React, Vite, Axios, React Router
